@@ -1,31 +1,32 @@
-go ios hello world project
+Gomobile Hello World project
 =============
-[![GitHub issues](https://img.shields.io/github/issues/bronze1man/goIosHelloWorld.svg)](https://github.com/bronze1man/goIosHelloWorld/issues)
-[![GitHub stars](https://img.shields.io/github/stars/bronze1man/goIosHelloWorld.svg)](https://github.com/bronze1man/goIosHelloWorld/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/bronze1man/goIosHelloWorld.svg)](https://github.com/bronze1man/goIosHelloWorld/network)
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/bronze1man/goIosHelloWorld/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/Magrath/gomobile-HelloWorld.svg)](https://github.com/Magrath/gomobile-HelloWorld/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Magrath/gomobile-HelloWorld.svg)](https://github.com/Magrath/gomobile-HelloWorld/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Magrath/gomobile-HelloWorld.svg)](https://github.com/Magrath/gomobile-HelloWorld/network)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/Magrath/gomobile-HelloWorld/blob/master/LICENSE)
 
 ### Requirements
-* Mac OS X
-* homebrew
-* Xcode
+* Homebrew
+* Go >= 1.5rc1
+* Xcode >= 6.4
 * You need to have a valid iOS development certificate installed.
 
-### install
+### Build
 ```
-git clone https://github.com/bronze1man/goIosHelloWorld
-cd goIosHelloWorld
-bash ./install.bash
+git clone https://github.com/Magrath/gomobile-HelloWorld
+cd gomobile-HelloWorld
+make init && make build
 ```
 
-### build and run
+### Run
 To run a program on an iDevice, first make sure you have a valid developer
 certificate and have setup your iDevice properly to run apps signed by your
 developer certificate.
 ```
-bash ./buildAndRun.bash
+make deploy
 ```
 
-### reference
+### Reference
+* https://godoc.org/golang.org/x/mobile/cmd/gomobile
 * https://go-review.googlesource.com/#/c/2127/7/misc/ios/README
 * https://medium.com/using-go-in-mobile-apps/using-go-in-mobile-apps-part-2-building-an-ios-app-with-go-build-eb1fc3b56c99
